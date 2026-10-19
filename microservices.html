@@ -1,53 +1,57 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-lang="pt">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Microservices | Guia Web de Arquitetura de Software</title>
+  <title data-en="Microservices | Web Guide to Software Architecture">Microservices | Guia Web de Arquitetura de Software</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
 </head>
 <body class="p-1">
-  <header class="topbar"><div class="wrap"><a href="index.html">← Início</a></div></header>
+  <header class="topbar"><div class="wrap">
+    <a href="index.html"><span data-l="pt">← Início</span><span data-l="en">← Home</span></a>
+    <div class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-set-lang="pt">PT</button><button type="button" data-set-lang="en">EN</button></div>
+  </div></header>
 
   <section class="hero"><div class="wrap">
-    <span class="kicker">Eixo 1</span>
-    <h1>1. Microsserviços</h1>
-    <p>James Lewis e Martin Fowler, 25 de março de 2014.</p>
-    <a class="btn" href="https://martinfowler.com/articles/microservices.html" target="_blank" rel="noopener noreferrer">Ler post original ↗</a>
+    <span class="kicker"><span data-l="pt">Eixo 1</span><span data-l="en">Axis 1</span></span>
+    <h1><span data-l="pt">1. Microsserviços</span><span data-l="en">1. Microservices</span></h1>
+    <p><span data-l="pt">James Lewis e Martin Fowler, 25 de março de 2014.</span><span data-l="en">James Lewis and Martin Fowler, March 25, 2014.</span></p>
+    <a class="btn" href="https://martinfowler.com/articles/microservices.html" target="_blank" rel="noopener noreferrer"><span data-l="pt">Ler post original ↗</span><span data-l="en">Read the original post ↗</span></a>
   </div></section>
 
   <main><div class="wrap">
     <section class="card">
-      <h2>O que é</h2>
-      <p>É uma ideia de desenvolver um projeto por meio de um conjunto de vários serviços. Cada qual executando o seu processo, se comunicando por meio de recursos automatizados.</p>
+      <h2><span data-l="pt">O que é</span><span data-l="en">What it is</span></h2>
+      <p><span data-l="pt">É uma ideia de desenvolver um projeto por meio de um conjunto de vários serviços. Cada qual executando o seu processo, se comunicando por meio de recursos automatizados.</span><span data-l="en">It is a way of developing a project as a set of several services, each one running its own process and communicating through automated mechanisms.</span></p>
     </section>
 
     <section class="card">
-      <h2>Vantagens e Desvantagens</h2>
-      <p>Microsserviços são implementados e escaláveis de forma independente, permitindo até mesmo que sejam gerenciaveis por equipes diferentes Linguagens diferentes também podem ser usadas para a construção do sistema. Por outro lado usar microsserviços também tem suas desvantagens, como por exemplo a comunicação. Comunicação contínua entre sistema e equipes, para que a aplicação seja implementada de maneira prática. Outra situação seria o custo, microsserviços tendem a custar mais, manter dados consistente requer automatização e monitoramento. Os autores enfatizam que o estilo é novo e não tem tantas abordagens.</p>
+      <h2><span data-l="pt">Vantagens e Desvantagens</span><span data-l="en">Advantages and Disadvantages</span></h2>
+      <p><span data-l="pt">Microsserviços são implementados e escaláveis de forma independente, permitindo até mesmo que sejam gerenciaveis por equipes diferentes Linguagens diferentes também podem ser usadas para a construção do sistema. Por outro lado usar microsserviços também tem suas desvantagens, como por exemplo a comunicação. Comunicação contínua entre sistema e equipes, para que a aplicação seja implementada de maneira prática. Outra situação seria o custo, microsserviços tendem a custar mais, manter dados consistente requer automatização e monitoramento. Os autores enfatizam que o estilo é novo e não tem tantas abordagens.</span><span data-l="en">Microservices are deployed and scaled independently, which even allows them to be managed by different teams. Different languages can also be used to build the system. On the other hand, microservices have their drawbacks, such as communication: systems and teams need to communicate continuously for the application to be implemented in a practical way. Another issue is cost: microservices tend to cost more, and keeping data consistent requires automation and monitoring. The authors stress that the style is new and there are not many established approaches yet.</span></p>
     </section>
 
     <section class="card">
-      <h2>Impacto na gestão do projeto</h2>
+      <h2><span data-l="pt">Impacto na gestão do projeto</span><span data-l="en">Impact on project management</span></h2>
       <div class="impact">
-        <article><h3>Prazo</h3><p>Microsserviços podem auxiliar muito na gestão de um projeto, separando prazos, microsserviços podem ser entregues separadamente. Prazos curtos podem ajudar melhor a junção desses serviços</p></article>
-        <article><h3>Custo</h3><p>O post não cita custos, mas microsserviços requer automatizção e monitoramento; Chamadas de APIs entre os serviços podem custar muito se não forem genérica.</p></article>
-        <article><h3>Equipe</h3><p>Equipe pequena e simples, e em completa sintonia podem ser ágil para microsserviços, com facilidade em trabalhar com esse modelo de gerenciamente.</p></article>
-        <article><h3>Riscos</h3><p>Na gestão um serviço pode afetar o outro, tornando um problema para a equipe e prazo. Conforme o sistema cresce pode se tornar dificil manter os dados consistentes e a comunicação entre os serviços. A equipe também deve ter habilidade para trabalhar com esse método.</p></article>
+        <article><h3><span data-l="pt">Prazo</span><span data-l="en">Schedule</span></h3><p><span data-l="pt">Microsserviços podem auxiliar muito na gestão de um projeto, separando prazos, microsserviços podem ser entregues separadamente. Prazos curtos podem ajudar melhor a junção desses serviços</span><span data-l="en">Microservices can help a lot in managing a project by splitting deadlines, since each service can be delivered separately. Short deadlines can make it easier to bring these services together.</span></p></article>
+        <article><h3><span data-l="pt">Custo</span><span data-l="en">Cost</span></h3><p><span data-l="pt">O post não cita custos, mas microsserviços requer automatizção e monitoramento; Chamadas de APIs entre os serviços podem custar muito se não forem genérica.</span><span data-l="en">The post does not mention costs, but microservices require automation and monitoring; API calls between services can be expensive if they are not generic.</span></p></article>
+        <article><h3><span data-l="pt">Equipe</span><span data-l="en">Team</span></h3><p><span data-l="pt">Equipe pequena e simples, e em completa sintonia podem ser ágil para microsserviços, com facilidade em trabalhar com esse modelo de gerenciamente.</span><span data-l="en">Small, simple teams that are fully in sync can be agile with microservices and find it easy to work with this management model.</span></p></article>
+        <article><h3><span data-l="pt">Riscos</span><span data-l="en">Risks</span></h3><p><span data-l="pt">Na gestão um serviço pode afetar o outro, tornando um problema para a equipe e prazo. Conforme o sistema cresce pode se tornar dificil manter os dados consistentes e a comunicação entre os serviços. A equipe também deve ter habilidade para trabalhar com esse método.</span><span data-l="en">One service can affect another, which becomes a problem for the team and the schedule. As the system grows, it can become hard to keep data consistent and services communicating. The team also needs the skills to work with this approach.</span></p></article>
       </div>
     </section>
 
     <section class="card source">
       <div>
-        <h2>Artigo original</h2>
+        <h2><span data-l="pt">Artigo original</span><span data-l="en">Original article</span></h2>
         <div class="url"><a href="https://martinfowler.com/articles/microservices.html" target="_blank" rel="noopener noreferrer">https://martinfowler.com/articles/microservices.html</a></div>
       </div>
-      <a class="btn" href="https://martinfowler.com/articles/microservices.html" target="_blank" rel="noopener noreferrer">Abrir o artigo ↗</a>
+      <a class="btn" href="https://martinfowler.com/articles/microservices.html" target="_blank" rel="noopener noreferrer"><span data-l="pt">Abrir o artigo ↗</span><span data-l="en">Open the article ↗</span></a>
     </section>
 
-    <nav class="pager"><span></span><a href="index.html">Início</a><a href="micro-frontends.html">Micro Frontends →</a></nav>
+    <nav class="pager"><span></span><a href="index.html"><span data-l="pt">Início</span><span data-l="en">Home</span></a><a href="micro-frontends.html">Micro Frontends →</a></nav>
   </div></main>
 
-  <footer><div class="wrap">Conteúdo baseado no artigo original de martinfowler.com.</div></footer>
+  <footer><div class="wrap"><span data-l="pt">Conteúdo baseado no artigo original de martinfowler.com.</span><span data-l="en">Content based on the original article from martinfowler.com.</span></div></footer>
 </body>
 </html>

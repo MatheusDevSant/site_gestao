@@ -26,7 +26,9 @@ Cada conceito tem uma página própria, com:
 
 ## Tecnologias
 
-HTML e CSS puros, sem frameworks e sem etapa de build. Publicado no GitHub Pages.
+HTML, CSS e JavaScript puros, sem frameworks e sem etapa de build. Publicado no GitHub Pages.
+
+O site pode ser lido em português ou em inglês: os botões PT/EN no topo de cada página trocam o idioma, e a escolha fica salva no navegador.
 
 ## Estrutura do projeto
 
@@ -34,13 +36,15 @@ HTML e CSS puros, sem frameworks e sem etapa de build. Publicado no GitHub Pages
 ├── microservices.html
 ├── micro-frontends.html
 ├── serverless.html
-└── css/
-└── style.css
+├── css/
+│   └── style.css
+└── js/
+    └── main.js     troca de idioma (PT/EN)
 
 
 ## Declaração de uso de IA
 
-Usamos o Claude (Anthropic) como apoio para montar o código do site (HTML e CSS). Os resumos e a análise de impacto na gestão foram escritos pela equipe e conferidos contra os artigos originais.
+Usamos o Claude (Anthropic) como apoio para montar o código do site (HTML, CSS e JavaScript) e para a tradução para o inglês. Os resumos e a análise de impacto na gestão foram escritos pela equipe e conferidos contra os artigos originais.
 
 ## Como publicar no GitHub Pages
 

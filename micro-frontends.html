@@ -1,53 +1,57 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-lang="pt">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Micro Frontends | Guia Web de Arquitetura de Software</title>
+  <title data-en="Micro Frontends | Web Guide to Software Architecture">Micro Frontends | Guia Web de Arquitetura de Software</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
 </head>
 <body class="p-2">
-  <header class="topbar"><div class="wrap"><a href="index.html">← Início</a></div></header>
+  <header class="topbar"><div class="wrap">
+    <a href="index.html"><span data-l="pt">← Início</span><span data-l="en">← Home</span></a>
+    <div class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-set-lang="pt">PT</button><button type="button" data-set-lang="en">EN</button></div>
+  </div></header>
 
   <section class="hero"><div class="wrap">
-    <span class="kicker">Eixo 2</span>
+    <span class="kicker"><span data-l="pt">Eixo 2</span><span data-l="en">Axis 2</span></span>
     <h1>2. Micro Frontends</h1>
-    <p>Cam Jackson, 19 de junho de 2019.</p>
-    <a class="btn" href="https://martinfowler.com/articles/micro-frontends.html" target="_blank" rel="noopener noreferrer">Ler o post original ↗</a>
+    <p><span data-l="pt">Cam Jackson, 19 de junho de 2019.</span><span data-l="en">Cam Jackson, June 19, 2019.</span></p>
+    <a class="btn" href="https://martinfowler.com/articles/micro-frontends.html" target="_blank" rel="noopener noreferrer"><span data-l="pt">Ler o post original ↗</span><span data-l="en">Read the original post ↗</span></a>
   </div></section>
 
   <main><div class="wrap">
     <section class="card">
-      <h2>O que é</h2>
-      <p>É uma técnica de estilo microsserviço, aplicada a parte apenas a parte visual do sistema. Gerenciamento de partes menores do frontend desenvolvidas de forma independente, onde cada uma é testada e publicada por equipes diferentes sem impactar o produto final./p>
+      <h2><span data-l="pt">O que é</span><span data-l="en">What it is</span></h2>
+      <p><span data-l="pt">É uma técnica de estilo microsserviço, aplicada a parte apenas a parte visual do sistema. Gerenciamento de partes menores do frontend desenvolvidas de forma independente, onde cada uma é testada e publicada por equipes diferentes sem impactar o produto final.</span><span data-l="en">It is a microservice-style technique applied only to the visual part of the system. It means managing smaller pieces of the frontend that are developed independently, where each one is tested and released by different teams without affecting the final product.</span></p>
     </section>
 
     <section class="card">
-      <h2>Vantagens e Desvantagens</h2>
-      <p>Como vantagens podemos ter bases de código menores de fácil manutenção. Escalabilidade com equipe menores e autônomas como no microsserviço. Além de customização, atualizações e modernização do código sem afetar um arquivo inteiro de frontend; Em desvantagens podemos citar a necessidade de consistência entre os arquivos, custos e um grande download conforme o tamanho das dependências.</p>
+      <h2><span data-l="pt">Vantagens e Desvantagens</span><span data-l="en">Advantages and Disadvantages</span></h2>
+      <p><span data-l="pt">Como vantagens podemos ter bases de código menores de fácil manutenção. Escalabilidade com equipe menores e autônomas como no microsserviço. Além de customização, atualizações e modernização do código sem afetar um arquivo inteiro de frontend; Em desvantagens podemos citar a necessidade de consistência entre os arquivos, custos e um grande download conforme o tamanho das dependências.</span><span data-l="en">Advantages include smaller codebases that are easy to maintain, and scalability with smaller, autonomous teams, as with microservices. It also allows customization, updates and modernization of the code without affecting an entire frontend file. Disadvantages include the need for consistency across the pieces, costs, and large downloads depending on the size of the dependencies.</span></p>
     </section>
 
     <section class="card">
-      <h2>Impacto na gestão do projeto</h2>
+      <h2><span data-l="pt">Impacto na gestão do projeto</span><span data-l="en">Impact on project management</span></h2>
       <div class="impact">
-        <article><h3>Prazo</h3><p>Cada equipe publica a sua parte sem esperar as outras assim como em microsserviços.</p></article>
-        <article><h3>Custo</h3><p>Há mais estrutura para montar e manter.</p></article>
-        <article><h3>Equipe</h3><p>Equipes autônomas implementa suas partes. É necessário que tenha padrões estabelecidos entre elas.</p></article>
-        <article><h3>Riscos</h3><p>Diferenças entre o projeto e o produto final, dados inconsistentes e padrões que não forem seguidos podem acarretar em distinção no produto.</p></article>
+        <article><h3><span data-l="pt">Prazo</span><span data-l="en">Schedule</span></h3><p><span data-l="pt">Cada equipe publica a sua parte sem esperar as outras assim como em microsserviços.</span><span data-l="en">Each team releases its own part without waiting for the others, just like with microservices.</span></p></article>
+        <article><h3><span data-l="pt">Custo</span><span data-l="en">Cost</span></h3><p><span data-l="pt">Há mais estrutura para montar e manter.</span><span data-l="en">There is more infrastructure to set up and maintain.</span></p></article>
+        <article><h3><span data-l="pt">Equipe</span><span data-l="en">Team</span></h3><p><span data-l="pt">Equipes autônomas implementa suas partes. É necessário que tenha padrões estabelecidos entre elas.</span><span data-l="en">Autonomous teams implement their own parts. Standards shared between the teams are required.</span></p></article>
+        <article><h3><span data-l="pt">Riscos</span><span data-l="en">Risks</span></h3><p><span data-l="pt">Diferenças entre o projeto e o produto final, dados inconsistentes e padrões que não forem seguidos podem acarretar em distinção no produto.</span><span data-l="en">Differences between the design and the final product, inconsistent data, and standards that are not followed can lead to inconsistencies in the product.</span></p></article>
       </div>
     </section>
 
     <section class="card source">
       <div>
-        <h2>Artigo original</h2>
+        <h2><span data-l="pt">Artigo original</span><span data-l="en">Original article</span></h2>
         <div class="url"><a href="https://martinfowler.com/articles/micro-frontends.html" target="_blank" rel="noopener noreferrer">https://martinfowler.com/articles/micro-frontends.html</a></div>
       </div>
-      <a class="btn" href="https://martinfowler.com/articles/micro-frontends.html" target="_blank" rel="noopener noreferrer">Abrir o artigo ↗</a>
+      <a class="btn" href="https://martinfowler.com/articles/micro-frontends.html" target="_blank" rel="noopener noreferrer"><span data-l="pt">Abrir o artigo ↗</span><span data-l="en">Open the article ↗</span></a>
     </section>
 
-    <nav class="pager"><a href="microservices.html">← Microservices</a><a href="index.html">Início</a><a href="serverless.html">Serverless →</a></nav>
+    <nav class="pager"><a href="microservices.html">← Microservices</a><a href="index.html"><span data-l="pt">Início</span><span data-l="en">Home</span></a><a href="serverless.html">Serverless →</a></nav>
   </div></main>
 
-  <footer><div class="wrap">Conteúdo baseado no artigo original de martinfowler.com.</div></footer>
+  <footer><div class="wrap"><span data-l="pt">Conteúdo baseado no artigo original de martinfowler.com.</span><span data-l="en">Content based on the original article from martinfowler.com.</span></div></footer>
 </body>
 </html>

@@ -1,53 +1,57 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-lang="pt">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Serverless | Guia Web de Arquitetura de Software</title>
+  <title data-en="Serverless | Web Guide to Software Architecture">Serverless | Guia Web de Arquitetura de Software</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
 </head>
 <body class="p-3">
-  <header class="topbar"><div class="wrap"><a href="index.html">← Início</a></div></header>
+  <header class="topbar"><div class="wrap">
+    <a href="index.html"><span data-l="pt">← Início</span><span data-l="en">← Home</span></a>
+    <div class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-set-lang="pt">PT</button><button type="button" data-set-lang="en">EN</button></div>
+  </div></header>
 
   <section class="hero"><div class="wrap">
-    <span class="kicker">Eixo 3</span>
-    <h1>3. Arquitetura Serverless</h1>
-    <p>Mike Roberts, 22 de maio de 2018.</p>
-    <a class="btn" href="https://martinfowler.com/articles/serverless.html" target="_blank" rel="noopener noreferrer">Ler post original ↗</a>
+    <span class="kicker"><span data-l="pt">Eixo 3</span><span data-l="en">Axis 3</span></span>
+    <h1><span data-l="pt">3. Arquitetura Serverless</span><span data-l="en">3. Serverless Architecture</span></h1>
+    <p><span data-l="pt">Mike Roberts, 22 de maio de 2018.</span><span data-l="en">Mike Roberts, May 22, 2018.</span></p>
+    <a class="btn" href="https://martinfowler.com/articles/serverless.html" target="_blank" rel="noopener noreferrer"><span data-l="pt">Ler post original ↗</span><span data-l="en">Read the original post ↗</span></a>
   </div></section>
 
   <main><div class="wrap">
     <section class="card">
-      <h2>O que é</h2>
-      <p>É uma arquitetura que utiliza serviços de terceiros hospedado em nuvem para gerenciar lógico e estado ao lado do servidor. O servidor continua existindo mas quem cuida é o provedor. É uma arquitetura combinada por duas ideias: o BaaS (Backend como Serviço), que usa serviços prontos de terceiros, como autenticação e método de pagamento. E o FaaS (ou Funções como Serviço), em que a equipe escreve parte do código em funções que só rodam quando acontece algum evento.</p>
+      <h2><span data-l="pt">O que é</span><span data-l="en">What it is</span></h2>
+      <p><span data-l="pt">É uma arquitetura que utiliza serviços de terceiros hospedado em nuvem para gerenciar lógico e estado ao lado do servidor. O servidor continua existindo mas quem cuida é o provedor. É uma arquitetura combinada por duas ideias: o BaaS (Backend como Serviço), que usa serviços prontos de terceiros, como autenticação e método de pagamento. E o FaaS (ou Funções como Serviço), em que a equipe escreve parte do código em funções que só rodam quando acontece algum evento.</span><span data-l="en">It is an architecture that uses third-party, cloud-hosted services to manage server-side logic and state. The server still exists, but the provider takes care of it. It combines two ideas: BaaS (Backend as a Service), which uses ready-made third-party services such as authentication and payment methods; and FaaS (Functions as a Service), where the team writes part of the code as functions that only run when some event happens.</span></p>
     </section>
 
     <section class="card">
-      <h2>Vantagens e Desvantagens</h2>
-      <p>O autor cita como vantagens a redução de custos, por exemplo é como se você pagasse alguem para cuidar de seus servidores, onde você pode ganhar em hardware/compartilhamento e mão de obra. Já como desvantagens, é dito que uma delas é a falta de controle com o fornecedor, você perde autonomia, tende a ter dependências. Problemas com seguranças também tendem a pesar. Limite de tempo para execução das funções, além de teste e monitoramento.</p>
+      <h2><span data-l="pt">Vantagens e Desvantagens</span><span data-l="en">Advantages and Disadvantages</span></h2>
+      <p><span data-l="pt">O autor cita como vantagens a redução de custos, por exemplo é como se você pagasse alguem para cuidar de seus servidores, onde você pode ganhar em hardware/compartilhamento e mão de obra. Já como desvantagens, é dito que uma delas é a falta de controle com o fornecedor, você perde autonomia, tende a ter dependências. Problemas com seguranças também tendem a pesar. Limite de tempo para execução das funções, além de teste e monitoramento.</span><span data-l="en">The author cites lower costs as an advantage: it is as if you paid someone to look after your servers, so you save on hardware/sharing and labor. As for disadvantages, one is the lack of control over the vendor: you lose autonomy and tend to become dependent on it. Security issues also weigh in, as do time limits on function execution and the difficulty of testing and monitoring.</span></p>
     </section>
 
     <section class="card">
-      <h2>Impacto na gestão do projeto</h2>
+      <h2><span data-l="pt">Impacto na gestão do projeto</span><span data-l="en">Impact on project management</span></h2>
       <div class="impact">
-        <article><h3>Prazo</h3><p>Em casos de mudanças, esse tipo de arquitetura pode ser rapidamente implementada, mas deve ponderar sobre prazos e entregas.</p></article>
-        <article><h3>Custo</h3><p>Reduz custos em operações individuais, mas pode custar caro em utilização em larga escala e carga alta.</p></article>
-        <article><h3>Equipe</h3><p>Exige que a equipe tenha cultura de DevOps, já que diminui operacional mas equivale em responsabilidade.</p></article>
-        <article><h3>Riscos</h3><p>Dependência do fornecedor: se o fornecedor não prover, o risco de falha de sistema é alto; erros de segurança e permissões, e dificuldade de testar e acompanhar o sistema podem se tornar dores de cabeça para um projeto.</p></article>
+        <article><h3><span data-l="pt">Prazo</span><span data-l="en">Schedule</span></h3><p><span data-l="pt">Em casos de mudanças, esse tipo de arquitetura pode ser rapidamente implementada, mas deve ponderar sobre prazos e entregas.</span><span data-l="en">When changes are needed, this kind of architecture can be implemented quickly, but schedules and deliveries must be weighed carefully.</span></p></article>
+        <article><h3><span data-l="pt">Custo</span><span data-l="en">Cost</span></h3><p><span data-l="pt">Reduz custos em operações individuais, mas pode custar caro em utilização em larga escala e carga alta.</span><span data-l="en">It lowers the cost of individual operations, but can become expensive under large-scale use and high load.</span></p></article>
+        <article><h3><span data-l="pt">Equipe</span><span data-l="en">Team</span></h3><p><span data-l="pt">Exige que a equipe tenha cultura de DevOps, já que diminui operacional mas equivale em responsabilidade.</span><span data-l="en">The team needs a DevOps culture, since operational work decreases but responsibility stays the same.</span></p></article>
+        <article><h3><span data-l="pt">Riscos</span><span data-l="en">Risks</span></h3><p><span data-l="pt">Dependência do fornecedor: se o fornecedor não prover, o risco de falha de sistema é alto; erros de segurança e permissões, e dificuldade de testar e acompanhar o sistema podem se tornar dores de cabeça para um projeto.</span><span data-l="en">Vendor dependency: if the vendor fails to deliver, the risk of system failure is high; security and permission errors, and difficulty testing and monitoring the system, can become headaches for a project.</span></p></article>
       </div>
     </section>
 
     <section class="card source">
       <div>
-        <h2>Artigo original</h2>
+        <h2><span data-l="pt">Artigo original</span><span data-l="en">Original article</span></h2>
         <div class="url"><a href="https://martinfowler.com/articles/serverless.html" target="_blank" rel="noopener noreferrer">https://martinfowler.com/articles/serverless.html</a></div>
       </div>
-      <a class="btn" href="https://martinfowler.com/articles/serverless.html" target="_blank" rel="noopener noreferrer">Abrir o artigo ↗</a>
+      <a class="btn" href="https://martinfowler.com/articles/serverless.html" target="_blank" rel="noopener noreferrer"><span data-l="pt">Abrir o artigo ↗</span><span data-l="en">Open the article ↗</span></a>
     </section>
 
-    <nav class="pager"><a href="micro-frontends.html">← Micro Frontends</a><a href="index.html">Início</a><span></span></nav>
+    <nav class="pager"><a href="micro-frontends.html">← Micro Frontends</a><a href="index.html"><span data-l="pt">Início</span><span data-l="en">Home</span></a><span></span></nav>
   </div></main>
 
-  <footer><div class="wrap">Conteúdo baseado no artigo original de martinfowler.com.</div></footer>
+  <footer><div class="wrap"><span data-l="pt">Conteúdo baseado no artigo original de martinfowler.com.</span><span data-l="en">Content based on the original article from martinfowler.com.</span></div></footer>
 </body>
 </html>
