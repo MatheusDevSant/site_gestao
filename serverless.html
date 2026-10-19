@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Serverless | Guia Web de Arquitetura de Software</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="p-3">
+  <header class="topbar"><div class="wrap"><a href="index.html">← Início</a></div></header>
+
+  <section class="hero"><div class="wrap">
+    <span class="kicker">Eixo 3</span>
+    <h1>3. Arquitetura Serverless</h1>
+    <p>Mike Roberts, 22 de maio de 2018.</p>
+    <a class="btn" href="https://martinfowler.com/articles/serverless.html" target="_blank" rel="noopener noreferrer">Ler post original ↗</a>
+  </div></section>
+
+  <main><div class="wrap">
+    <section class="card">
+      <h2>O que é</h2>
+      <p>É uma arquitetura que utiliza serviços de terceiros hospedado em nuvem para gerenciar lógico e estado ao lado do servidor. O servidor continua existindo mas quem cuida é o provedor. É uma arquitetura combinada por duas ideias: o BaaS (Backend como Serviço), que usa serviços prontos de terceiros, como autenticação e método de pagamento. E o FaaS (ou Funções como Serviço), em que a equipe escreve parte do código em funções que só rodam quando acontece algum evento.</p>
+    </section>
+
+    <section class="card">
+      <h2>Vantagens e Desvantagens</h2>
+      <p>O autor cita como vantagens a redução de custos, por exemplo é como se você pagasse alguem para cuidar de seus servidores, onde você pode ganhar em hardware/compartilhamento e mão de obra. Já como desvantagens, é dito que uma delas é a falta de controle com o fornecedor, você perde autonomia, tende a ter dependências. Problemas com seguranças também tendem a pesar. Limite de tempo para execução das funções, além de teste e monitoramento.</p>
+    </section>
+
+    <section class="card">
+      <h2>Impacto na gestão do projeto</h2>
+      <div class="impact">
+        <article><h3>Prazo</h3><p>Em casos de mudanças, esse tipo de arquitetura pode ser rapidamente implementada, mas deve ponderar sobre prazos e entregas.</p></article>
+        <article><h3>Custo</h3><p>Reduz custos em operações individuais, mas pode custar caro em utilização em larga escala e carga alta.</p></article>
+        <article><h3>Equipe</h3><p>Exige que a equipe tenha cultura de DevOps, já que diminui operacional mas equivale em responsabilidade.</p></article>
+        <article><h3>Riscos</h3><p>Dependência do fornecedor: se o fornecedor não prover, o risco de falha de sistema é alto; erros de segurança e permissões, e dificuldade de testar e acompanhar o sistema podem se tornar dores de cabeça para um projeto.</p></article>
+      </div>
+    </section>
+
+    <section class="card source">
+      <div>
+        <h2>Artigo original</h2>
+        <div class="url"><a href="https://martinfowler.com/articles/serverless.html" target="_blank" rel="noopener noreferrer">https://martinfowler.com/articles/serverless.html</a></div>
+      </div>
+      <a class="btn" href="https://martinfowler.com/articles/serverless.html" target="_blank" rel="noopener noreferrer">Abrir o artigo ↗</a>
+    </section>
+
+    <nav class="pager"><a href="micro-frontends.html">← Micro Frontends</a><a href="index.html">Início</a><span></span></nav>
+  </div></main>
+
+  <footer><div class="wrap">Conteúdo baseado no artigo original de martinfowler.com.</div></footer>
+</body>
+</html>
