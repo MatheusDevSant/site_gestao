@@ -6,8 +6,8 @@ Site que explica três conceitos de arquitetura de software, a partir de artigos
 
 ## Integrantes
 
-- [Anne Carlini]
-- [Matheus Santos]
+- Anne Carlini
+- Matheus Santos
 
 ## O que o site traz
 
